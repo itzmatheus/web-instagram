@@ -27,7 +27,7 @@ class Feed extends Component {
     }
 
     registerToSocket = () => {
-        const socket = io('http://localhost:8080');
+        const socket = io('http://192.168.0.24:8080');
         
         // watching: post, like
 
@@ -63,7 +63,7 @@ class Feed extends Component {
                             <img src={more} alt="Mais" />
                         </header>
 
-                        <img src={`http://localhost:8080/files/${post.image}`} alt="Foto Perfil"/>
+                        <img src={`${post.image}`} alt="Foto Perfil"/>
 
                         <footer>
                             <div className="actions">
