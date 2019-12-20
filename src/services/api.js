@@ -1,7 +1,9 @@
 import axios from 'axios';
+import apiInstagramUrl from '../config/global';
+
 
 const api = axios.create({
-    baseURL: 'http://192.168.0.24:8080',
+    baseURL: apiInstagramUrl,
 });
 
 export default api;

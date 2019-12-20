@@ -7,6 +7,8 @@ import like from '../assets/like.svg';
 import comment from '../assets/comment.svg';
 import send from '../assets/send.svg';
 
+import apiInstagramUrl from '../config/global'
+
 import './Feed.css';
 import Axios from 'axios';
 
@@ -27,7 +29,7 @@ class Feed extends Component {
     }
 
     registerToSocket = () => {
-        const socket = io('http://192.168.0.24:8080');
+        const socket = io(apiInstagramUrl);
         
         // watching: post, like
 
