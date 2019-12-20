@@ -29,7 +29,7 @@ class Feed extends Component {
     }
 
     registerToSocket = () => {
-        const socket = io(apiInstagramUrl);
+        const socket = io(process.env.REACT_APP_API_URL);
         
         // watching: post, like
 

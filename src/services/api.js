@@ -1,9 +1,7 @@
 import axios from 'axios';
-import apiInstagramUrl from '../config/global';
-
 
 const api = axios.create({
-    baseURL: apiInstagramUrl,
+    baseURL: process.env.REACT_APP_API_URL,
 });
 
 export default api;
